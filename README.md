@@ -2,4 +2,4 @@
 
 Made with my mentor at [Bloc](http://bloc.io).
 
-Heroku approved  nrao-bloccit [http://nrao-bloccit.herokuapp.com/]
+Heroku app nrao-bloccit [http://nrao-bloccit.herokuapp.com/]
