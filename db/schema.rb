@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20150620215712) do
-=======
-ActiveRecord::Schema.define(version: 20150620182131) do
->>>>>>> f22f4ee5444f75defcf7314972ec0ded104e6c47
+ActiveRecord::Schema.define(version: 20150622224040) do
 
   create_table "advertisements", force: :cascade do |t|
     t.string   "title"
@@ -37,6 +33,14 @@ ActiveRecord::Schema.define(version: 20150620182131) do
   create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "questions", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.boolean  "resolved"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
