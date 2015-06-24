@@ -55,3 +55,4 @@ end
 gem 'bootstrap-sass'
 gem 'pry-rails'
 gem 'devise'
+gem 'figaro', '1.0'
