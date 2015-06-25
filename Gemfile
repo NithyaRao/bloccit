@@ -51,8 +51,17 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
+#  a Sass-powered version of Bootstrap, ready to drop right into your Sass powered applications.
 gem 'bootstrap-sass'
+#  Pry is a powerful alternative to the standard IRB shell for Ruby.
 gem 'pry-rails'
+# Devise is a flexible authentication solution for Rails based on Warden
 gem 'devise'
+# Figaro makes it easy to securely configure Rails applications.It parses a Git-ignored YAML file in your application and loads its values into ENV.
 gem 'figaro', '1.0'
+# a gem that makes it easier to authorize different users for different tasks in your app
+gem 'pundit'
+
+
+
+
