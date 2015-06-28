@@ -79,5 +79,4 @@ Rails.application.configure do
  
   # configure email for Production.
   config.action_mailer.default_url_options = { host: 'nrao-bloccit.herokuapp.com' }
- end
 end
