@@ -10,7 +10,7 @@ class TopicsController < ApplicationController
   end
 
   def create
-    @topic = Topic.new(params.require(:topic).permit(:name, :description))
+    @topic = Topic.new(topic_params)
      authorize @topic
      if @topic.save
        redirect_to @topic, notice: "Topic was saved successfully."
@@ -33,7 +33,7 @@ class TopicsController < ApplicationController
   def update
      @topic = Topic.find(params[:id])
      authorize @topic
-     if @topic.update_attributes(params.require(:topic).permit(:name, :description))
+     if @topic.update_attributes(topic_params)
        flash[:notice] = "Topic was saved."
        redirect_to @topic
      else
@@ -41,4 +41,10 @@ class TopicsController < ApplicationController
        render :edit
      end
    end
+
+  private
+
+  def topic_params
+    params.require(:post).permit(:title, :body)
+  end
 end
