@@ -61,6 +61,8 @@ gem 'devise'
 gem 'figaro', '1.0'
 # a gem that makes it easier to authorize different users for different tasks in your app
 gem 'pundit'
+# a gem library that GitHub uses for Markdown:
+gem 'redcarpet'
 
 
 
