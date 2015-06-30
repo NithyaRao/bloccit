@@ -63,6 +63,12 @@ gem 'figaro', '1.0'
 gem 'pundit'
 # a gem library that GitHub uses for Markdown:
 gem 'redcarpet'
+# gems to upload images and manipulate images
+gem 'carrierwave'
+gem 'mini_magick'
+# gem Fog is known as a "cloud services library", and essentially makes uploading to S3 easier
+gem 'fog'
+
 
 
 
