@@ -68,7 +68,8 @@ gem 'carrierwave'
 gem 'mini_magick'
 # gem Fog is known as a "cloud services library", and essentially makes uploading to S3 easier
 gem 'fog'
-
+# gem for Pagination
+gem 'will_paginate', '~> 3.0.7'
 
 
 
