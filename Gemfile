@@ -71,6 +71,9 @@ gem 'fog'
 # gem for Pagination
 gem 'will_paginate', '~> 3.0.6'
 
-
+group :development do
+  gem 'binding_of_caller'
+  gem 'better_errors'
+end  
 
 

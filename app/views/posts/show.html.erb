@@ -7,10 +7,15 @@
        <%= @post.user.name %>
      </small>
      <p><%= markdown_to_html @post.body %></p>
+     <br><br>
+      <h4> COMMENTS </h4>
+     <%= render @comments %>
+     <br>
+       <%= render :template => "/comments/_form.html.erb", locals: { topic: @topic, post: @post, comment: @comment} %>
    </div>
    <div class="col-md-4">
      <% if policy(@post).edit? %>
-       <%= link_to "Edit", edit_topic_post_path(@topic,@post), class: 'btn btn-success' %>
+       <%= link_to "Edit Post", edit_topic_post_path(@topic,@post), class: 'btn btn-success' %>
      <% end %>
    </div>
 </div>
