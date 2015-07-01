@@ -1,4 +1,6 @@
+<% if policy(@comment).new? %>
 <div class="col-md-8">
        <%= render :template => "/comments/_form.html.erb", locals: { topic: @topic, post: @post, comment: @comment } %>
       
 </div>
+<%end %>

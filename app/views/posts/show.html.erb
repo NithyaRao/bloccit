@@ -10,8 +10,10 @@
      <br><br>
       <h4> COMMENTS </h4>
      <%= render @comments %>
-     <br>
+     <% if policy(@comment).create? %>
+      <br>
        <%= render :template => "/comments/_form.html.erb", locals: { topic: @topic, post: @post, comment: @comment} %>
+     <% end %>
    </div>
    <div class="col-md-4">
      <% if policy(@post).edit? %>
