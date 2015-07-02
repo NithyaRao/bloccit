@@ -50,6 +50,9 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  
+  # testing framework for Rails
+  gem 'rspec-rails', '~> 3.0'
 end
 #  a Sass-powered version of Bootstrap, ready to drop right into your Sass powered applications.
 gem 'bootstrap-sass'
