@@ -5,7 +5,12 @@
    <% @posts.each do |post| %>
     <div class="media">
      <div class="media-body">
-       <h4 class="media-heading">
+      <div class="pull-left vote-arrows" >
+   <div><%= link_to " ", '#', class: 'glyphicon glyphicon-chevron-up' %></div>
+   <div><strong><%= post.points %></strong></div>
+   <div><%= link_to " ", '#', class: 'glyphicon glyphicon-chevron-down' %></div>
+</div>
+       <h4 class="media-heading">   
           <%= link_to (markdown_to_html post.title), [@topic,post] %>
        </h4>
         <small>
