@@ -5,13 +5,13 @@ class PostsController < ApplicationController
      @post = Post.find(params[:id])  
      @comments = @post.comments
      @comment = Comment.new
-    # authorize @comment should this be there 
+    # authorize @comment should not be here as we are only initiating an empty comment object  
   end
 
   def new
     @topic = Topic.find(params[:topic_id])
     @post = Post.new
-    authorize @post
+   # authorize @post
   end
   
   def create
