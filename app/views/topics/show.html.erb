@@ -4,13 +4,9 @@
     <p class="lead"><%= @topic.description %></p>
    <% @posts.each do |post| %>
     <div class="media">
+       <%= render partial: 'votes/voter', locals: { post: post } %>
      <div class="media-body">
-      <div class="pull-left vote-arrows" >
-   <div><%= link_to " ", '#', class: 'glyphicon glyphicon-chevron-up' %></div>
-   <div><strong><%= post.points %></strong></div>
-   <div><%= link_to " ", '#', class: 'glyphicon glyphicon-chevron-down' %></div>
-</div>
-       <h4 class="media-heading">   
+       <h4 class="media-heading">
           <%= link_to (markdown_to_html post.title), [@topic,post] %>
        </h4>
         <small>
