@@ -13,8 +13,10 @@
      <p><%= markdown_to_html @post.body %></p>
       <h4> COMMENTS </h4>
      <%= render @comments %>
-       <%= render :template => "/comments/_form.html.erb", locals: { topic: @topic, post: @post, comment: @comment} %>   
-     <% if policy(@post).edit? %>
+     <br>
+       <%= render :template => "/comments/_form.html.erb", locals: { post: @post, comment: @comment} %>
+    <div class="col-md-4">
+      <% if policy(@post).edit? %>
        <%= link_to "Edit Post", edit_topic_post_path(@topic,@post), class: 'btn btn-success' %>
      <% end %>
      <% if policy(@post).destroy? %>
