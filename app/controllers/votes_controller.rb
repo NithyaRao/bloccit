@@ -2,7 +2,7 @@ class VotesController < ApplicationController
    before_action :load_post_and_vote
 
   def up_vote
-      updte_vote!(1)
+      update_vote!(1)
       redirect_to :back  
   end
 
