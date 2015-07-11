@@ -5,6 +5,8 @@ class PostsController < ApplicationController
      @post = Post.find(params[:id])  
      @comments = @post.comments
      @comment = Comment.new
+     # don't want to show a post of a private topic .
+     authorize @topic
   end
 
   def new
