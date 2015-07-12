@@ -53,6 +53,10 @@ group :development, :test do
   
   # testing framework for Rails
   gem 'rspec-rails', '~> 3.0'
+
+  #acceptance test framework for web applications
+  gem 'capybara'
+  
 end
 #  a Sass-powered version of Bootstrap, ready to drop right into your Sass powered applications.
 gem 'bootstrap-sass'
