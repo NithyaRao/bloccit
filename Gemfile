@@ -56,7 +56,8 @@ group :development, :test do
 
   #acceptance test framework for web applications
   gem 'capybara'
-  
+
+
 end
 #  a Sass-powered version of Bootstrap, ready to drop right into your Sass powered applications.
 gem 'bootstrap-sass'
@@ -83,4 +84,7 @@ group :development do
   gem 'better_errors'
 end  
 
-
+group :test do
+  # Factory_girl
+  gem 'factory_girl'
+end

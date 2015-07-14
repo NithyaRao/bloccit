@@ -21,4 +21,15 @@ module TestFactories
      user.save
      user
  end
+
+ FactoryGirl.define do
+  factory :user do
+    name 'NKR'
+    email 'bumblebeenr@gmail.com'
+    password 'helloworld'
+
+    # if needed
+    # is_active true
+  end
+end
 end
