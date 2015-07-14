@@ -78,6 +78,9 @@ gem 'fog'
 # gem for Pagination
 gem 'will_paginate', '~> 3.0.6'
 
+# de-facto performance monitoring tool for web and mobile apps
+gem 'newrelic_rpm'
+
 group :development do
   gem 'binding_of_caller'
   gem 'better_errors'
