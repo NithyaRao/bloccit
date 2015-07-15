@@ -83,4 +83,7 @@ group :development do
   gem 'better_errors'
 end  
 
+group :test do
+  gem 'factory_girl_rails', '~> 4.0'
+end
 
