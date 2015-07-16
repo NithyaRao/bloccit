@@ -25,11 +25,13 @@ class CommentsController < ApplicationController
      @comment = Comment.find(params[:id])
      authorize @comment
      if @comment.destroy
-      flash[:notice] = "Comment was removed."
-       redirect_to [@post.topic, @post]
+      flash[:notice] = "Comment was removed."     
      else
        flash[:error] = "There was an error removing the comment. Please try again."
-       render 'posts/show'
+     end
+     respond_to do |format|
+       format.html
+       format.js
      end
   end
 
